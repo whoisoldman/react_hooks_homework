@@ -1,74 +1,41 @@
-import React, {useState} from 'react';
-import './TaskOne.css';
+import React from "react";
+import { useForm, defaultValidateRegistration } from "../customHook/useForm";
+import "./TaskOne.css";
 
-function TaskOne() {
-    /**
-     * Вынесите эти стейты в свой хук, все изменения полей должны валидирвоаться по разным правилам:
-     * firstName, lastName - не могут быть пустыми
-     * email - должен совпадать с паттерном email, оп которому стандартный email адрес- валидный, а test или @some или some@te - будут не валидны
-     * password - должен быть не меньше 5 символов и должен включать в себя цифры и сепц символы (%$@ и т.д.)
-     * confirmPassword - должен совпадать с password
-     * */
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
-    const [error, setError] = useState('');
+const initial = { firstName: "", lastName: "", email: "", password: "", confirm: "" };
 
-    // Ваш хук должен возвращать фукцию которую будет использовать форма для сабмита данных
-    const onSubmitHandle = (event) => {
-        event.preventDefault();
+export default function TaskOne() {
+  const { values, errors, handleChange, handleSubmit, isValid, reset } = useForm({
+    initial,
+    validate: defaultValidateRegistration,
+    onSubmit: (vals, { reset }) => {
+      console.log("REGISTER:", vals);
+      alert("Submitted! Check console.");
+      reset();
+    },
+  });
 
-        const {
-            firstName,
-            lastName,
-            email,
-            password,
-            confirmPassword,
-        } = event;
+  return (
+    <div className="form-container">
+      <form onSubmit={handleSubmit} noValidate>
+        <Field name="firstName" placeholder="First Name" value={values.firstName} onChange={handleChange} error={errors.firstName} />
+        <Field name="lastName"  placeholder="Last Name"  value={values.lastName}  onChange={handleChange} error={errors.lastName} />
+        <Field name="email"     placeholder="Email"      value={values.email}     onChange={handleChange} error={errors.email} type="email" />
+        <Field name="password"  placeholder="Password"   value={values.password}  onChange={handleChange} error={errors.password} type="password" />
+        <Field name="confirm"   placeholder="Confirm Password" value={values.confirm} onChange={handleChange} error={errors.confirm} type="password" />
 
-        // Здесь вы можете обрабатывать логику отправки формы,
-        // например, вызвать ваш API для отправки данных формы
-
-        // После успешной отправки формы, очистите все поля
-        setFirstName('');
-        setLastName('');
-        setEmail('');
-        setPassword('');
-        setConfirmPassword('');
-
-
-        // И используйте alert, чтобы показать результат
-        alert(JSON.stringify({firstName,
-            lastName,
-            email,
-            password,
-            confirmPassword,}));
-    };
-
-    // TODO: реализуйте пользовательский хук для валидации
-    // const submitForm = useSubmitForm(onSubmitHandle);
-
-    // Замени сеттеры из стейта на callback-и из твоего хука
-    return (
-        <div className="form-container">
-            <div className="error-message">{error}</div>
-            <form onSubmit={onSubmitHandle}> {/* Измените здесь на submitForm, когда он будет готов */}
-                <input type="text" name="firstName" placeholder="First Name" className="form-input"
-                       onChange={(e) => setFirstName(e.target.value)} value={firstName}/>
-                <input type="text" name="lastName" placeholder="Last Name" className="form-input"
-                       onChange={(e) => setLastName(e.target.value)} value={lastName}/>
-                <input type="email" name="email" placeholder="Email" className="form-input"
-                       onChange={(e) => setEmail(e.target.value)} value={email}/>
-                <input type="password" name="password" placeholder="Password" className="form-input"
-                       onChange={(e) => setPassword(e.target.value)} value={password}/>
-                <input type="password" name="confirmPassword" placeholder="Confirm Password" className="form-input"
-                       onChange={(e) => setConfirmPassword(e.target.value)} value={confirmPassword}/>
-                <button type="submit" className="form-button">Register</button>
-            </form>
-        </div>
-    );
+        <button className="form-button" type="submit" disabled={!isValid}>Register</button>
+        <button className="form-button" type="button" onClick={reset}>Reset</button>
+      </form>
+    </div>
+  );
 }
 
-export default TaskOne;
+function Field({ error, ...rest }) {
+  return (
+    <>
+      <input {...rest} className="form-input" />
+      {error ? <div className="error-message">{error}</div> : null}
+    </>
+  );
+}

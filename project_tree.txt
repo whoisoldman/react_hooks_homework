@@ -1,0 +1,465 @@
+.
+|____pnpm-lock.yaml
+|____useLayoutEffect
+| |____use-layout-effect
+| | |____README.md
+| | |____public
+| | | |____favicon.ico
+| | | |____index.html
+| | | |____logo512.png
+| | | |____manifest.json
+| | | |____robots.txt
+| | | |____logo192.png
+| | |____package-lock.json
+| | |____package.json
+| | |____src
+| | | |____etalon-usage
+| | | | |____CorrectUsage.css
+| | | | |____README.md
+| | | | |____CorrectUsage.js
+| | | |____reportWebVitals.js
+| | | |____problem-with-rendering
+| | | | |____ProblemWithRendering.js
+| | | | |____ProblemWithRendering.css
+| | | | |____README.md
+| | | |____App.css
+| | | |____index.js
+| | | |____index.css
+| | | |____App.test.js
+| | | |____components-wrapper
+| | | | |____ComponentsWeapper.css
+| | | | |____ComponentsWrapper.jsx
+| | | |____setupTests.js
+| | | |____logo.svg
+| | | |____App.js
+|____useReducer
+| |____use-reducer
+| | |____README.md
+| | |____public
+| | | |____favicon.ico
+| | | |____index.html
+| | | |____logo512.png
+| | | |____manifest.json
+| | | |____robots.txt
+| | | |____logo192.png
+| | |____package-lock.json
+| | |____package.json
+| | |____src
+| | | |____reportWebVitals.js
+| | | |____reducer-example
+| | | | |____counter-context
+| | | | |____ReducerExample.css
+| | | | |____ReducerExample.jsx
+| | | | |____README.md
+| | | | |____counter-controls
+| | | | |____counter-display
+| | | |____reducer-problem
+| | | | |____render-counter
+| | | | |____reducer-problem-fix
+| | | | |____ProblemShowCase.css
+| | | | |____reducer-problem
+| | | | |____README.md
+| | | | |____ProblemShowCase.jsx
+| | | |____App.css
+| | | |____index.js
+| | | |____index.css
+| | | |____App.test.js
+| | | |____components-wrapper
+| | | | |____ComponentsWeapper.css
+| | | | |____ComponentsWrapper.jsx
+| | | |____setupTests.js
+| | | |____logo.svg
+| | | |____App.js
+|____project_tree.txt
+|____npm-ci.log
+|____useContext
+| |____use-context
+| | |____README.md
+| | |____public
+| | | |____favicon.ico
+| | | |____index.html
+| | | |____logo512.png
+| | | |____manifest.json
+| | | |____robots.txt
+| | | |____logo192.png
+| | |____package-lock.json
+| | |____package.json
+| | |____src
+| | | |____reportWebVitals.js
+| | | |____App.css
+| | | |____index.js
+| | | |____index.css
+| | | |____state-managment
+| | | | |____render-counter
+| | | | |____OptimizedCase.js
+| | | | |____StateManagment.css
+| | | | |____ProblemCase.js
+| | | | |____optimized-case
+| | | | |____README.md
+| | | | |____problem-case
+| | | | |____StateManagement.js
+| | | |____App.test.js
+| | | |____components-wrapper
+| | | | |____ComponentsWeapper.css
+| | | | |____ComponentsWrapper.jsx
+| | | |____setupTests.js
+| | | |____logo.svg
+| | | |____App.js
+| | | |____multicontext
+| | | | |____theme-provider
+| | | | |____language-provider
+| | | | |____ThemeContextProvider.js
+| | | | |____README.md
+| | | | |____MultiContext.css
+| | | | |____neasted-component
+| | | | |____MultiContext.js
+|____useRef
+| |____use-ref
+| | |____README.md
+| | |____public
+| | | |____favicon.ico
+| | | |____index.html
+| | | |____logo512.png
+| | | |____manifest.json
+| | | |____robots.txt
+| | | |____logo192.png
+| | |____package-lock.json
+| | |____package.json
+| | |____src
+| | | |____problem-with-use-effect
+| | | | |____ProblemWithUseEffect.css
+| | | | |____README.md
+| | | | |____ProblemWithUseEffect.jsx
+| | | |____reportWebVitals.js
+| | | |____callback-storage
+| | | | |____CallbackStorage.css
+| | | | |____README.md
+| | | | |____CallbackStorage.jsx
+| | | |____App.css
+| | | |____index.js
+| | | |____index.css
+| | | |____App.test.js
+| | | |____render-optimization
+| | | | |____RenderOptimization.jsx
+| | | | |____RenderOptimization.css
+| | | | |____README.md
+| | | |____components-wrapper
+| | | | |____ComponentsWeapper.css
+| | | | |____ComponentsWrapper.jsx
+| | | |____setupTests.js
+| | | |____logo.svg
+| | | |____browser-events-with-ref
+| | | | |____BrowserEventsWithRef.jsx
+| | | | |____README.md
+| | | | |____BrowserEventsWithRef.css
+| | | |____classic-usage
+| | | | |____ClassicUsage.css
+| | | | |____README.md
+| | | | |____ClassicUsage.jsx
+| | | |____App.js
+|____README.md
+|____useMemo
+| |____use-memo
+| | |____README.md
+| | |____public
+| | | |____favicon.ico
+| | | |____index.html
+| | | |____logo512.png
+| | | |____manifest.json
+| | | |____robots.txt
+| | | |____logo192.png
+| | |____package-lock.json
+| | |____package.json
+| | |____src
+| | | |____comparing
+| | | | |____README.md
+| | | | |____Comparing.js
+| | | | |____Comparing.css
+| | | |____reportWebVitals.js
+| | | |____expancive-operation
+| | | | |____with-optimization
+| | | | |____WithOptimization.js
+| | | | |____README.md
+| | | | |____WithoutOptimization.js
+| | | | |____ExpensiveOperation.js
+| | | | |____without-optimization
+| | | | |____ExpensiveOperation.css
+| | | |____App.css
+| | | |____index.js
+| | | |____index.css
+| | | |____App.test.js
+| | | |____components-wrapper
+| | | | |____ComponentsWeapper.css
+| | | | |____ComponentsWrapper.jsx
+| | | |____setupTests.js
+| | | |____logo.svg
+| | | |____App.js
+|____useCallback
+| |____use-callback
+| | |____README.md
+| | |____public
+| | | |____favicon.ico
+| | | |____index.html
+| | | |____logo512.png
+| | | |____manifest.json
+| | | |____robots.txt
+| | | |____logo192.png
+| | |____package-lock.json
+| | |____package.json
+| | |____src
+| | | |____using-dependencies
+| | | | |____README.md
+| | | | |____UsingDependencies.css
+| | | | |____problem-case
+| | | | |____UsingDependencies.js
+| | | | |____correct-case
+| | | |____infinite-loop
+| | | | |____README.md
+| | | | |____InfiniteLoop.css
+| | | | |____InfiniteLoop.js
+| | | |____reportWebVitals.js
+| | | |____App.css
+| | | |____index.js
+| | | |____index.css
+| | | |____optimization-with-use-effect
+| | | | |____with-optimization
+| | | | |____README.md
+| | | | |____without-optimization
+| | | | |____UseCallbackWithUseEffect.css
+| | | | |____UseCallbackWithUseEffect.js
+| | | |____bad-optimization
+| | | | |____BadOptimization.js
+| | | | |____README.md
+| | | | |____BadOptimization.css
+| | | |____App.test.js
+| | | |____render-optimization
+| | | | |____render-counter
+| | | | |____with-optimization
+| | | | |____RenderOptimization.css
+| | | | |____README.md
+| | | | |____without-optimization
+| | | | |____RenderOptimization.js
+| | | |____components-wrapper
+| | | | |____ComponentsWeapper.css
+| | | | |____ComponentsWrapper.jsx
+| | | |____setupTests.js
+| | | |____logo.svg
+| | | |____App.js
+|____public
+| |____favicon.ico
+| |____index.html
+| |____logo512.png
+| |____manifest.json
+| |____robots.txt
+| |____logo192.png
+|____customHook
+| |____custom-hook
+| | |____README.md
+| | |____public
+| | | |____favicon.ico
+| | | |____index.html
+| | | |____logo512.png
+| | | |____manifest.json
+| | | |____robots.txt
+| | | |____logo192.png
+| | |____package-lock.json
+| | |____package.json
+| | |____useForm.js
+| | |____src
+| | | |____reportWebVitals.js
+| | | |____App.css
+| | | |____index.js
+| | | |____custom-hook-for-request
+| | | | |____CustomHookForRequest.css
+| | | | |____README.md
+| | | | |____CustomHookForRequest.jsx
+| | | |____index.css
+| | | |____App.test.js
+| | | |____components-wrapper
+| | | | |____ComponentsWeapper.css
+| | | | |____ComponentsWrapper.jsx
+| | | |____setupTests.js
+| | | |____logo.svg
+| | | |____simple-example
+| | | | |____SimpleExample.css
+| | | | |____README.md
+| | | | |____SimpleExample.jsx
+| | | |____App.js
+|____.gitignore
+|____package-lock.json
+|____package.json
+|____useEffect
+| |____use-effect
+| | |____README.md
+| | |____public
+| | | |____favicon.ico
+| | | |____index.html
+| | | |____logo512.png
+| | | |____manifest.json
+| | | |____robots.txt
+| | | |____logo192.png
+| | |____package-lock.json
+| | |____package.json
+| | |____src
+| | | |____side-effect
+| | | | |____SideEffect.css
+| | | | |____SideEffect.js
+| | | | |____README.md
+| | | |____reportWebVitals.js
+| | | |____App.css
+| | | |____index.js
+| | | |____index.css
+| | | |____cancel-event
+| | | | |____CancelEvent.js
+| | | | |____README.md
+| | | | |____CancelEvent.css
+| | | |____with-dependency
+| | | | |____WithDependency.js
+| | | | |____README.md
+| | | | |____WithDependency.css
+| | | |____App.test.js
+| | | |____components-wrapper
+| | | | |____ComponentsWeapper.css
+| | | | |____ComponentsWrapper.jsx
+| | | |____component-live-cycle-emulation
+| | | | |____ComponentLiveCycleEmulation.css
+| | | | |____README.md
+| | | | |____ComponentLiveCycleEmulation.js
+| | | |____setupTests.js
+| | | |____logo.svg
+| | | |____App.js
+|____useImperativeHandle
+| |____use-imperative-handle
+| | |____README.md
+| | |____public
+| | | |____favicon.ico
+| | | |____index.html
+| | | |____logo512.png
+| | | |____manifest.json
+| | | |____robots.txt
+| | | |____logo192.png
+| | |____package-lock.json
+| | |____package.json
+| | |____src
+| | | |____reportWebVitals.js
+| | | |____App.css
+| | | |____index.js
+| | | |____index.css
+| | | |____use-imperative-handle-usage
+| | | | |____fancy-button
+| | | | |____UseImperativeHandleUsage.jsx
+| | | | |____README.md
+| | | | |____UseImperativeHandleUsage.css
+| | | |____App.test.js
+| | | |____components-wrapper
+| | | | |____ComponentsWeapper.css
+| | | | |____ComponentsWrapper.jsx
+| | | |____focus-on-child
+| | | | |____FocusOnChild.jsx
+| | | | |____FocusOnChild.css
+| | | |____setupTests.js
+| | | |____logo.svg
+| | | |____App.js
+| |____README.md
+|____useDebugValue
+| |____use-debug-value
+| | |____README.md
+| | |____public
+| | | |____favicon.ico
+| | | |____index.html
+| | | |____logo512.png
+| | | |____manifest.json
+| | | |____robots.txt
+| | | |____logo192.png
+| | |____package-lock.json
+| | |____package.json
+| | |____src
+| | | |____debug-value-second
+| | | | |____DebugValueSecond.js
+| | | | |____README.md
+| | | | |____DebugValueSecond.css
+| | | |____debug-value-usage
+| | | | |____DebugValueUsage.js
+| | | | |____README.md
+| | | |____reportWebVitals.js
+| | | |____App.css
+| | | |____index.js
+| | | |____index.css
+| | | |____App.test.js
+| | | |____components-wrapper
+| | | | |____ComponentsWeapper.css
+| | | | |____ComponentsWrapper.jsx
+| | | |____setupTests.js
+| | | |____logo.svg
+| | | |____App.js
+|____src
+| |____task-three
+| | |____TaskThree.css
+| | |____README.md
+| | |____TaskThree.jsx
+| |____reportWebVitals.js
+| |____task-two
+| | |____render-counter
+| | | |____RenderCounter.css
+| | | |____RenderCounter.js
+| | |____TaskTwo.jsx
+| | |____README.md
+| | |____TaskTwo.css
+| |____App.css
+| |____index.js
+| |____index.css
+| |____task-one
+| | |____TaskOne_old.jsx
+| | |____TaskOne.css
+| | |____README.md
+| | |____TaskOne.jsx
+| |____customHook
+| | |____useForm.js
+| |____App.test.js
+| |____components-wrapper
+| | |____ComponentsWeapper.css
+| | |____ComponentsWrapper.jsx
+| |____setupTests.js
+| |____logo.svg
+| |____App.js
+|____useState
+| |____use-state
+| | |____README.md
+| | |____public
+| | | |____favicon.ico
+| | | |____index.html
+| | | |____logo512.png
+| | | |____manifest.json
+| | | |____robots.txt
+| | | |____logo192.png
+| | |____package-lock.json
+| | |____package.json
+| | |____src
+| | | |____data-fetcher
+| | | | |____DataFetcher.css
+| | | | |____README.md
+| | | | |____DataFetcher.jsx
+| | | |____state-initialization
+| | | | |____README.md
+| | | | |____StateInitialization.module.css
+| | | | |____StateInitialization.jsx
+| | | |____reportWebVitals.js
+| | | |____App.css
+| | | |____index.js
+| | | |____index.css
+| | | |____shopping-cart
+| | | | |____ShoppingCartWithProblem.jsx
+| | | | |____README.md
+| | | | |____ShoppingCartWithoutProblem.jsx
+| | | | |____ShoppingCart.module.css
+| | | |____App.test.js
+| | | |____components-wrapper
+| | | | |____ComponentsWeapper.css
+| | | | |____ComponentsWrapper.jsx
+| | | |____todo-app
+| | | | |____README.md
+| | | | |____ToDoApp.module.css
+| | | | |____ToDoApp.jsx
+| | | |____setupTests.js
+| | | |____logo.svg
+| | | |____App.js
