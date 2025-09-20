@@ -73,7 +73,7 @@ function TaskTwoInner({ onFullReset }) {
 
   return (
     <div className="form-container">
-      <h2 className="task-one__title">Второе задание</h2>
+      <h2 className="task-one__title"></h2>
 
       <Controls
         value={value}

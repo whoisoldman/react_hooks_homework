@@ -1,54 +1,81 @@
-.TaskThree {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 50rem;
-    margin: auto;
-    padding: 1rem;
+/* Базовые классы берём из Task One (.form-container, .form-input, .form-button) — единый стиль. */
+.task-three__title { text-align: center; margin-bottom: 0.5rem; }
+
+.task-three__controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.75rem;
 }
 
-.TaskThree input {
-    width: 100%;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: .5rem;
-    border: .1rem solid #ccc;
-    box-shadow: .2rem .2rem .5rem rgba(0,0,0,.1);
-    transition: box-shadow .3s ease;
+.task-three__hint {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
 }
 
-.TaskThree input:focus {
-    box-shadow: .2rem .2rem .5rem rgba(0,0,0,.3);
+.task-three__list {
+  width: 100%;
+  max-width: 36rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.TaskThree h1 {
-    box-shadow: .5rem .5rem 1rem rgba(0,0,0,.2);
-    border-radius: .5rem;
-    transition: all .3s ease;
-    font-size: 2rem;
-    padding: 1rem;
-    margin: 1rem;
+.task-three__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-.TaskThree h1:hover {
-    transform: scale(1.1);
-    box-shadow: .5rem .5rem 1rem rgba(0,0,0,.4);
+.task-three__row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.TaskThree ul {
-    width: 100%;
-    padding: 0;
-    list-style-type: none;
+.task-three__title {
+  font-size: 1rem;
 }
 
-.TaskThree ul li {
-    padding: 1rem;
-    margin: .5rem 0;
-    border-radius: .5rem;
-    box-shadow: .2rem .2rem .5rem rgba(0,0,0,.1);
-    transition: box-shadow .3s ease;
+.task-three__remove {
+  border: none;
+  background: transparent;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #888;
+}
+.task-three__remove:hover { color: #d9534f; }
+
+.task-three__item.is-done .task-three__title {
+  text-decoration: line-through;
+  color: #6c757d;
 }
 
-.TaskThree ul li:hover {
-    box-shadow: .2rem .2rem .5rem rgba(0,0,0,.3);
+/* Признак оптимистичной записи */
+.task-three__item.is-ghost { opacity: 0.6; }
+
+.task-three__empty {
+  text-align: center;
+  color: #6c757d;
+  padding: 1rem 0;
 }
+
+.task-three__stats {
+  margin-top: 0.75rem;
+  text-align: center;
+  color: #555;
+}
+
+/* Цвета кнопок в стиле Task Two */
+.form-button.btn-blue   { background-color: blue; }
+.form-button.btn-blue:hover { background-color: darkblue; }
+.form-button.btn-orange { background-color: #d2691e; }
+.form-button.btn-orange:hover { background-color: #a65417; }
